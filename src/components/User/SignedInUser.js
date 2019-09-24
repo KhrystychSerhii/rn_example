@@ -2,7 +2,7 @@ import React from 'react';
 import { PermissionsAndroid } from 'react-native'
 import { connect } from 'react-redux';
 import ImagePicker from 'react-native-image-picker';
-import styled from 'styled-components';
+import styled from 'styled-components/native';
 import {faEdit} from '@fortawesome/free-solid-svg-icons';
 import { size } from '../../styles/icon';
 

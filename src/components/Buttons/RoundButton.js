@@ -1,7 +1,7 @@
 import React from 'react';
 import { TouchableOpacity } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import styled from 'styled-components';
+import styled from 'styled-components/native';
 import { size } from '../../styles/icon';
 import { lightGrey, primary } from '../../styles/color';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/native';
 import { StyledText } from '../../styles/font';
 import { primary } from '../../styles/color';
 

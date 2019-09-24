@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text } from 'react-native';
 import { faBell, faCog, faArrowLeft, faUser } from '@fortawesome/free-solid-svg-icons';
-import styled from 'styled-components';
+import styled from 'styled-components/native';
 
 import { primary } from '../../styles/color';
 import { size } from '../../styles/icon';
@@ -21,7 +21,9 @@ const StyledIconsRow = styled.View`
 	min-width: ${(size.m + 5) * 2}px;
 `;
 
-export const Header = ({ screenProps, navigation, showBackButton = true }) => {
+export const Header = ({ screenProps, navigation }) => {
+	const routes = get(navigation, 'state.routes', []);
+	const currentRouteName = get(routes, [routes.length - 1, 'routeName'], '');
 	const goBack = () => {
 		navigation.pop();
 	};
@@ -35,10 +37,10 @@ export const Header = ({ screenProps, navigation, showBackButton = true }) => {
 		<StyledHeaderRow>
 			<StyledIconsRow>
 				{
-					showBackButton && <IconButton icon={ faArrowLeft } onPress={goBack} styles={{ marginLeft: 0 }} />
+					routes.length > 1 && <IconButton icon={ faArrowLeft } onPress={goBack} styles={{ marginLeft: 0 }} />
 				}
 			</StyledIconsRow>
-			<Text>{navigation.state.routeName}</Text>
+			<Text>{currentRouteName}</Text>
 			<StyledIconsRow>
 				<IconButton icon={ faBell } onPress={openNotificationsModal} />
 				<IconButton icon={ faUser } onPress={openSignInModal} />

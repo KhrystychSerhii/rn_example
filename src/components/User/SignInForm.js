@@ -1,6 +1,6 @@
 import React from 'react';
 import {Formik} from 'formik';
-import styled from 'styled-components';
+import styled from 'styled-components/native';
 import * as Yup from 'yup';
 
 // Components

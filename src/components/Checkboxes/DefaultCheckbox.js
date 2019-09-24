@@ -1,7 +1,7 @@
 import React from 'react';
 import { TouchableWithoutFeedback } from 'react-native';
 import { Svg, Path } from 'react-native-svg';
-import styled from 'styled-components';
+import styled from 'styled-components/native';
 import { primary } from '../../styles/color';
 
 const Checkbox = styled.View`

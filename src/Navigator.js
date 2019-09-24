@@ -22,14 +22,15 @@ import { Header } from './components/Header/Header';
 const MainNavigator = createStackNavigator({
 		Home: {
 			screen: HomeScreen,
-			navigationOptions: ({ screenProps, navigation }) => ({ header: <Header navigation={navigation} screenProps={screenProps} showBackButton={false} /> })
 		},
 		Details: {
 			screen: DetailsScreen,
-			navigationOptions: ({ screenProps, navigation }) => ({ header: <Header navigation={navigation} screenProps={screenProps} /> })
 		}
 	}, {
-	initialRouteName: 'Home'
+		initialRouteName: 'Home',
+		defaultNavigationOptions: {
+			header: Header
+		}
 	}
 );
 

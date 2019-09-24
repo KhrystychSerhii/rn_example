@@ -1,6 +1,6 @@
 import React from 'react';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
-import styled from 'styled-components';
+import styled from 'styled-components/native';
 
 import { IconButton } from '../../components';
 

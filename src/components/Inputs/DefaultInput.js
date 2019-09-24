@@ -4,7 +4,7 @@ import { View, Text, TextInput } from 'react-native';
 import { size, weight } from '../../styles/font';
 import { lightGrey, dark, error } from '../../styles/color';
 
-import styled from 'styled-components';
+import styled from 'styled-components/native';
 
 const StyledWrapper = styled.View`
 	margin-bottom: ${props => props.lastChild ? '15px' : '5px'};

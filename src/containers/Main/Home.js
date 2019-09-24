@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import {FlatList} from 'react-native';
 import { connect } from 'react-redux';
 import { faThList, faThLarge } from '@fortawesome/free-solid-svg-icons';
-import styled from 'styled-components';
+import styled from 'styled-components/native';
 import { maxBy } from 'lodash'
 
 import { IconButton } from '../../components';

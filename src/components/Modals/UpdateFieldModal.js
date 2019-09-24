@@ -1,7 +1,7 @@
 import React from 'react';
 import { Modal, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import { faSave } from '@fortawesome/free-solid-svg-icons';
-import styled from 'styled-components';
+import styled from 'styled-components/native';
 
 // Components
 import { DefaultTextInput } from '../Inputs/DefaultInput';
